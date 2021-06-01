@@ -9,14 +9,10 @@
 		"128": "icon.png"
 	},
 	"content_scripts": [
-    {
-      "run_at": "document_idle",
-      "matches": [
-        "https://*.aws.amazon.com/*"
-      ],
-      "js": [
-        "enable-button.js"
-      ]
-    }
-  ]
+		{
+			"run_at": "document_idle",
+			"matches": ["https://*.aws.amazon.com/*"],
+			"js": ["index.js"]
+		}
+	]
 }
