@@ -1,7 +1,7 @@
 const enableButton = (button) => {
   if (button.classList.contains('awsui-button-no-text')) return
 
-  const textKeys = ['Delete', 'Empty'];
+  const textKeys = ['Delete', 'Empty', 'Terminate'];
 
   textKeys.forEach(key => {
     if (!button.innerText.startsWith(key)) return;
